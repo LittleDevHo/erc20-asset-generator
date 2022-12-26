@@ -1,10 +1,10 @@
 <!--
-  Title: ERC20 Asset Generator
-  Description: An ethereum ERC20 token generator, issue your own token on ethereum with just a few clicks.
-  Author: Sayed Tauseef Naqvi
-  Keywords: ethereum, ERC20, token, asset, web3js, MetaMask
+  Title: Metadium MRC20 Asset Generator
+  Description: An metadium MRC20 token generator, issue your own token on Metadium Mainnet with just a few clicks.
+  Author: Cyber G
+  Keywords: Metadium, MRC20, token, asset, web3js, MetaMask
   -->
-# ERC20 Asset/Token Generator
+# MRC20 Asset/Token Generator
 
 ![ERC20 Asset Generator Screenshot](https://i.imgur.com/ZZZP7PS.png)
 
