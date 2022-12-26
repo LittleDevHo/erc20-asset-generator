@@ -475,7 +475,7 @@ window.addEventListener('load', async () => {
     // No web3 provider
     else {
         console.log('No web3 provider detected || web3 not exits');
-        metamaskStatus.html('You do not appear to be connected to any Ethereum network. To use this service and deploy your contract, we recommend using the <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">MetaMask</a> plugin for Google Chrome, which allows your web browser to connect to an Ethereum network.').show();
+        metamaskStatus.html('You do not appear to be connected to any Metadium network. To use this service and deploy your contract, we recommend using the <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">MetaMask</a> plugin for Google Chrome, which allows your web browser to connect to an Metadium network.').show();
     }
 });
 
@@ -512,9 +512,9 @@ function start() {
     // metamaskEvents()
     getEthNetworkId()
         .then(function (networkId) {
-            if (networkId === '1') {
+            if (networkId === '11') {
                 isMainNetwork = true;
-                currentNetwork.text('You are currently at Mainnet').show();
+                currentNetwork.text('You are currently at Metadium Mainnet').show();
             } else if (networkId === '3') {
                 isRopsten = true;
                 currentNetwork.text('Your are currently at Ropsten testnet.').show();
@@ -558,7 +558,7 @@ function start() {
                 }
             })
             .then(function (balance) {
-                accountAddress.html('<strong>Selected Account: ' + address + ' (' + balance + ' eth)</strong>').show();
+                accountAddress.html('<strong>Selected Account: ' + address + ' (' + balance + ' META)</strong>').show();
             })
             .fail(function (err) {
                 if (err.message !== "Metamask Locked")
@@ -687,7 +687,7 @@ assetForm.submit(function (e) {
             console.log('Deployed Contract Address : ', newContractInstance.options.address);
             var newContractAddress = newContractInstance.options.address;
             if (isMainNetwork) {
-                statusText.innerHTML = 'Transaction  mined! Contract address: <a href="https://etherscan.io/token/' + newContractAddress + '" target="_blank">' + newContractAddress + '</a>'
+                statusText.innerHTML = 'MRC20 Transaction  mined! Contract address: <a href="https://explorer.metadium.com/token/' + newContractAddress + '" target="_blank">' + newContractAddress + '</a>'
             } else if (isRopsten) {
                 statusText.innerHTML = 'Transaction  mined! Contract address: <a href="https://ropsten.etherscan.io/token/' + newContractAddress + '" target="_blank">' + newContractAddress + '</a>'
             } else if (isRinkeby) {
