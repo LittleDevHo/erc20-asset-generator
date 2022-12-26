@@ -9,7 +9,7 @@
 ![ERC20 Asset Generator Screenshot](https://i.imgur.com/ZZZP7PS.png)
 
 ## Demo
-[https://erc20-asset.ethorbit.com](https://erc20-asset.ethorbit.com)
+[https://metadium-token-generator.netlify.app/](https://metadium-token-generator.netlify.app/)
 
 ## Installation
 
